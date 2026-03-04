@@ -1,13 +1,11 @@
 <?php
-session_start();
-
 if (isset($_POST["submit"])) {
 
-    $_SESSION['BOUQUETS'] = $_POST['BOUQUETS'] ?? '';
-    $_SESSION['ARRANGEMENTS'] = $_POST['ARRANGEMENTS'] ?? '';
-    $_SESSION['SINGLE_FLOWERS'] = $_POST['SINGLE_FLOWERS'] ?? '';
-    $_SESSION['ADD_ONS'] = $_POST['ADD_ONS'] ?? '';
-    $_SESSION['SPECIAL_OCCASION'] = $_POST['SPECIAL_OCCASION'] ?? '';
+    $_SESSION['BOUQUETS'] = $_POST['BOUQUETS'];
+    $_SESSION['ARRANGEMENTS'] = $_POST['ARRANGEMENTS'];
+    $_SESSION['SINGLE_FLOWERS'] = $_POST['SINGLE_FLOWERS'];
+    $_SESSION['ADD_ONS'] = $_POST['ADD_ONS'];
+    $_SESSION['SPECIAL_OCCASION'] = $_POST['SPECIAL_OCCASION'];
 
     Bouquets();
     Arrangements();
